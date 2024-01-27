@@ -7,7 +7,7 @@ int main()
 {
     int num,num2;
     scanf("%d %d",&num,&num2);
-    
+
     int max,min;
     max = num>num2 ? num : num2;
     min = num<num2 ? num : num2;
