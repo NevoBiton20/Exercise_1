@@ -6,7 +6,7 @@ RECUR= basicClassification.o advancedClassificationRecursion.o
 all: loops recursives recursived loopd mains maindrec maindloop
 
 mains: main.o libclassrec.a
-	$(CC) $(FLAGS) -o mains main.o -L. -lclassrec
+	$(CC) $(FLAGS) -o mains main.o -L. -static -lclassrec
 
 maindrec: main.o
 	$(CC) $(FLAGS) -o maindrec main.o ./libclassrec.so
