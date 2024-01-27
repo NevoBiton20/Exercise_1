@@ -22,7 +22,7 @@ int main()
         }
     }
     printf("\n");
-    printf("The palindromes are:");
+    printf("The Palindromes are:");
     for(int i=min;i<=max;i++)
     {
         if(isPalindrome(i)==TRUE)
