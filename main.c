@@ -6,10 +6,8 @@
 int main()
 {
     int num,num2;
-    printf("Please insert two positive integer numbers\n");
-    scanf("%d",&num);
-    scanf("%d",&num2);
-
+    scanf("%d %d",&num,&num2);
+    
     int max,min;
     max = num>num2 ? num : num2;
     min = num<num2 ? num : num2;
@@ -24,7 +22,7 @@ int main()
         }
     }
     printf("\n");
-    printf("The palindrome numbers in this range are:");
+    printf("The palindromes are:");
     for(int i=min;i<=max;i++)
     {
         if(isPalindrome(i)==TRUE)
