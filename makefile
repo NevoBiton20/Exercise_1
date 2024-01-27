@@ -23,7 +23,7 @@ libclassloops.a: $(LOOPS)
 	ar -rcs libclassloops.a $(LOOPS)
 	
 libclassrec.a: $(RECUR)
-	ar -rcs libclassloops.a $(RECUR)
+	ar -rcs libclassrec.a $(RECUR)
 
 libclassrec.so: $(RECUR)
 	$(CC) -fPIC -shared -o libclassrec.so $(RECUR)
