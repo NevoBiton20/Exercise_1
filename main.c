@@ -1,0 +1,57 @@
+#include "NumClass.h"
+#include <stdio.h>
+#define TRUE 1
+#define FALSE 0
+
+int main()
+{
+    int num,num2;
+    printf("Please insert two positive integer numbers\n");
+    scanf("%d",&num);
+    scanf("%d",&num2);
+
+    int max,min;
+    max = num>num2 ? num : num2;
+    min = num<num2 ? num : num2;
+
+    printf("The Armstrong numbers are:");
+    for(int i=min;i<=max;i++)
+    {
+        if(isArmstrong(i)==TRUE)
+        {
+            printf(" ");
+            printf("%d",i);
+        }
+    }
+    printf("\n");
+    printf("The palindrome numbers in this range are:");
+    for(int i=min;i<=max;i++)
+    {
+        if(isPalindrome(i)==TRUE)
+        {
+            printf(" ");
+            printf("%d",i);
+        }
+    }
+    printf("\n");
+    printf("The Prime numbers are:");
+    for(int i=min;i<=max;i++)
+    {
+        if(isPrime(i)==TRUE)
+        {
+            printf(" ");
+            printf("%d",i);
+        }
+    }
+    printf("\n");
+    printf("The Strong numbers are:");
+    for(int i=min;i<=max;i++)
+    {
+        if(isStrong(i)==TRUE)
+        {
+            printf(" ");
+            printf("%d",i);
+        }
+    }
+    return 0;
+}
