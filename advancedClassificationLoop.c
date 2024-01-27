@@ -72,7 +72,7 @@ int isPalindrome(int num)
     int num2=num, flipped=0;
     while(num2!=0)
     {
-        flipped=flipped*10+(num2%10);
+        flipped = flipped*10 +num2%10;
         num2=num2/10;
     }
 
