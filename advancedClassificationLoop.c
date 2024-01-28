@@ -43,6 +43,10 @@ int numLength(int num)
 
 int isArmstrong(int num)
 {
+    if(num<0)
+    {
+        return FALSE;
+    }
     int num2=num;
     int exponent =numLength(num2);
     int sum=0;
@@ -61,6 +65,10 @@ int isArmstrong(int num)
 
 int isPalindrome(int num)
 {
+    if(num<0)
+    {
+        return FALSE;
+    }
     if(num==0)
     {
         return TRUE;
