@@ -8,6 +8,10 @@ int isPrime(int num)
     {
         return TRUE;
     }
+    if(num<1)
+    {
+        return FALSE;
+    }
     for(int i=2;i<=num/2;i++)
     {
         if(num%i==0)
