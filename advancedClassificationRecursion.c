@@ -1,10 +1,10 @@
 #include "NumClass.h"
 #define TRUE 1
 #define FALSE 0
-
+    
 int numOfdigit(int num)
 {
-    if(num==0)
+    if(num>=0&&num<10)
     {
         return 1;
     }
@@ -20,9 +20,8 @@ int powerRec(int num,int exponent)
     {
         return 1;
     }
-    return num * powerRec(num*num,exponent-1);
+    return num * powerRec(num,exponent-1);
 }
-
 int flipper(int num)
 {
     if(num==0)
@@ -36,7 +35,6 @@ int flipper(int num)
     int ld = num%10;
     return (ld)*powerRec(10,numOfdigit(num)-1) +flipper(num/10);
 }
-
 int sumOfDigitsPow(int num,int digitAmount)
 {
     if(num==0)
