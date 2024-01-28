@@ -48,6 +48,10 @@ int sumOfDigitsPow(int num,int digitAmount)
 
 int isArmstrong(int num)
 {
+    if(num<0)
+    {
+        return FALSE;
+    }
     if(num==sumOfDigitsPow(num,numOfdigit(num)))
     {
         return TRUE;
@@ -57,6 +61,10 @@ int isArmstrong(int num)
 
 int isPalindrome(int num)
 {
+    if(num<0)
+    {
+        return FALSE;
+    }
     if(num==0)
     {
         return TRUE;
